@@ -1,16 +1,52 @@
+import { useState } from 'react';
 import './App.css';
-import Todo from './Todo'
-import { Modal } from "./Modal"
+import FetchingData from './components/FetchingData.jsx';
+import  PostingData  from './components/PostingData.jsx';
+
 function App() {
-return (
-<div class="todo-container">
-<div class="card">
-<Todo></Todo>
+  const [showFetchData, setShowFetchData] = useState(true);
+  const [showPostData, setPostData] = useState(false);
 
-</div>
-</div>
+  const handleShowFetchDataDemo = () => {
+    setShowFetchData(true);
+    setPostData(false);
+  };
 
-);
+  const handleShowPostDataDemo = () => {
+    setShowFetchData(false);
+    setPostData(true);
+  };
+
+  return (
+    <div className="container">
+      <button onClick={() => handleShowFetchDataDemo()} className="button">
+        Fetching Data Demo
+      </button>
+      <button onClick={() => handleShowPostDataDemo()} className="button">
+        Posting Data Demo
+      </button>
+      <hr />
+      {showFetchData ? <FetchingData /> : <PostingData />}
+    </div>
+  );
 }
 
 export default App;
+
+//import './App.css';
+//import Todo from './Todo';
+//import { Modal } from "./modal";
+//function App() {
+//    return (
+//        <div class="todo-container">
+//            <div class="card">
+//                <Todo></Todo>
+//
+//            </div>
+//        </div>
+//
+//    );
+//}
+//
+//export default App;
+

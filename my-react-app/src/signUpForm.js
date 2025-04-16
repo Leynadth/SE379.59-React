@@ -11,7 +11,7 @@ export const UseStateDemo = () => {
     setFormState({
       ...formState,
       email: event.target.value
-    )};
+    })
   };
 
   return (
