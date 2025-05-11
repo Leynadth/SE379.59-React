@@ -34,7 +34,7 @@ function showModalHandler() {
   modal.className = 'modal';
 
   const modalText = document.createElement('p');
-  modalText.textContent = 'Did you complete the task';
+  modalText.textContent = 'Did you complete this task?';
 
   const modalCancelAction = document.createElement('button');
   modalCancelAction.textContent = 'Cancel';
@@ -42,7 +42,7 @@ function showModalHandler() {
   modalCancelAction.addEventListener('click', closeModalHandler);
 
   const modalConfirmAction = document.createElement('button');
-  modalConfirmAction.textContent = 'Yes';
+  modalConfirmAction.textContent = 'Confirm';
   modalConfirmAction.className = 'btn';
   modalConfirmAction.addEventListener('click', closeModalHandler);
 
