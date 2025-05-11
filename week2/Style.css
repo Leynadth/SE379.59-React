@@ -1,0 +1,46 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.todo-container {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn {
+  margin: 10px;
+  padding: 20px 40px;
+  font-size: 24px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  font-size: 16px;
+  color: red;
+  margin-top: 5px;
+}
+
+input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 18px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
