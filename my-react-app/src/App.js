@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import FetchingData from './components/FetchingData.jsx';
 import  PostingData  from './components/PostingData.jsx';
+import MyAwsome from './components/MyAwesome';
 
 function App() {
   const [showFetchData, setShowFetchData] = useState(true);
@@ -27,9 +28,18 @@ function App() {
       </button>
       <hr />
       {showFetchData ? <FetchingData /> : <PostingData />}
+
+      <hr />
+      <h2>Week 3 Mini Library  Components</h2>
+      <MyAwsome />
+
     </div>
+
+    
   );
 }
+
+
 
 export default App;
 
